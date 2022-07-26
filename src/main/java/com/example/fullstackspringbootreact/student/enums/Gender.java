@@ -1,4 +1,4 @@
-package com.example.fullstackspringbootreact.enums;
+package com.example.fullstackspringbootreact.student.enums;
 
 public enum Gender {
     MALE,

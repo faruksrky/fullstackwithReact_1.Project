@@ -5,8 +5,8 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/reactdb
-    username: postgres
+    url: jdbc:postgresql://aaxjld90663wkq.cfjqoi9gvwx6.eu-west-1.rds.amazonaws.com:5432/reactdb
+    username: faruksrky
     password: password
   jpa:
     hibernate:

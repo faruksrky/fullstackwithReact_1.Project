@@ -1,4 +1,8 @@
 package com.example.fullstackspringbootreact.student.exception;
 
-public class StıdentNotFoundException {
+public class StudentNotFoundException extends RuntimeException {
+
+    public StudentNotFoundException (String msg){
+        super(msg);
+    }
 }

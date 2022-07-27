@@ -10,7 +10,7 @@ class FullStackSpringBootReactApplicationTests {
 
     @Test
     void contextLoads() {
-        Assertions.fail("hi test failed");
+       // Assertions.fail("hi test failed");
     }
 
 }

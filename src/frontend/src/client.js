@@ -1,31 +1,30 @@
-import fetch from 'unfetch';
+import fetch from 'unfetch'
 
- const checkStatus = response => {
+const checkStatus = response => {
     if (response.ok) {
         return response;
-    } else {
-        const error = new Error(response.statusText);
-        error.response = response;
-        return Promise.reject(error);
     }
-  
+    // convert non-2xx HTTP responses into errors:
+    const error = new Error(response.statusText);
+    error.response = response;
+    return Promise.reject(error);
 }
 
-export const getStudents = () =>
+export const getAllStudents = () =>
     fetch("api/v1/students")
         .then(checkStatus);
 
- export const addNewStudent = student =>
+export const addNewStudent = student =>
+    fetch("api/v1/students", {
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            method: 'POST',
+            body: JSON.stringify(student)
+        }
+    ).then(checkStatus)
 
-     fetch("api/v1/students", {
-         headers: {
-             'Content-Type' : 'application/json'
-         },
-         method : 'POST',
-         body: JSON.stringify(student)
-         }).then(checkStatus);
-
- export const deleteStudent = studentID =>
-     fetch (`api/v1/students/${studentID}`, {
-        method : 'DELETE',
+export const deleteStudent = studentId =>
+    fetch(`api/v1/students/${studentId}`,
+        {method:'DELETE'
         }).then(checkStatus);

@@ -214,6 +214,14 @@ function App() {
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png"
                 />
             </Footer>
+            <Divider>
+                <a
+                    target ="_blank"
+                    href="https://amigoscode.com/courses/enrolled/553022">
+                    Click heere to access Full Spring Boot and React for profesional
+                </a>
+            </Divider>
+
         </Layout>
     </Layout>
 }

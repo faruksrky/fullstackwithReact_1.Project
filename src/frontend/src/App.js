@@ -216,6 +216,7 @@ function App() {
             </Footer>
             <Divider>
                 <a
+                    rel={"noopener noreferrer"}
                     target ="_blank"
                     href="https://amigoscode.com/courses/enrolled/553022">
                     Click heere to access Full Spring Boot and React for profesional

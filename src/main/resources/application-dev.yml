@@ -5,7 +5,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://aaxjld90663wkq.cfjqoi9gvwx6.eu-west-1.rds.amazonaws.com:5432/reactdb
+    url: jdbc:postgresql://aa1bu5m5gcp0snb.cl6tppex5yii.eu-central-1.rds.amazonaws.com:5432/reactdb
     username: faruksrky
     password: password
   jpa:

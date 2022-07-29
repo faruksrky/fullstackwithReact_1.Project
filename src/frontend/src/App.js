@@ -222,7 +222,6 @@ function App() {
                     Click heere to access Full Spring Boot and React for profesional
                 </a>
             </Divider>
-
         </Layout>
     </Layout>
 }

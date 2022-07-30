@@ -219,7 +219,7 @@ function App() {
                     rel={"noopener noreferrer"}
                     target ="_blank"
                     href="https://amigoscode.com/courses/enrolled/553022">
-                    Click heere to access Full Spring Boot and React for profesional
+                    Click here to access Full Spring Boot and React for Professional
                 </a>
             </Divider>
         </Layout>
